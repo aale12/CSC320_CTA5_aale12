@@ -46,12 +46,10 @@ public class CTA5_Option1 {
                     System.out.println("The temperature on " + dayFormatted + " is " + dayTemperatures.get(dayNames.indexOf(day)) + " degrees.");
                     sum += dayTemperatures.get(dayNames.indexOf(day));
                 }
-
-                System.out.format("The average temperature for the week is " + "%.2f degrees.", sum.doubleValue() / dayNames.size());
+                System.out.format("The average temperature for the week is %.2f degrees.\n", sum.doubleValue() / dayNames.size());
             } else {
                 System.err.println("You did not input a valid day.");
             }
-
         }
         sc.close();
     }
